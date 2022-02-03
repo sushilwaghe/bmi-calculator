@@ -18,14 +18,10 @@ function calculateBMI() {
     }
     else if(bmi >= 25 && bmi <= 29.9){
         document.getElementById("txt-remark").innerHTML = "Overweight";
-        document.getElementById("progress-remark").className = "progress-bar progress-bar-striped progress-bar-animated bg-info";
+        document.getElementById("progress-remark").className = "progress-bar progress-bar-striped progress-bar-animated bg-warning";
     }
     else if(bmi >= 30 && bmi <= 34.9){
         document.getElementById("txt-remark").innerHTML = "Obese";
-        document.getElementById("progress-remark").className = "progress-bar progress-bar-striped progress-bar-animated bg-warning";
-    }
-    else if(bmi >= 34.9 && bmi <= 40){
-        document.getElementById("txt-remark").innerHTML = "Extremely Overweight ";
-        document.getElementById("progress-remark").className = "progress-bar progress-bar-striped progress-bar-animated bg-danger";
+        document.getElementById("progress-remark").className = "progress-bar progress-bar-striped progress-bar-animated  bg-danger";
     }
 }
